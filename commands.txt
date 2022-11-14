@@ -1,4 +1,4 @@
-docker build -t rmq-with-ssl -f Dockerfile.AutoSSL .
+docker build -t rmq-with-ssl .
 
 
 docker run -d --rm -p 5671:5671 -p 8080:15671 rmq-with-ssl

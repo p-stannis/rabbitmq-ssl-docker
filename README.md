@@ -14,13 +14,7 @@ host system. Client certificates are generated under the **/home/client** direct
 ## To build this image
 
 ```
-cd tests && ./build.sh
-```
-
-The generated image doesn't contains SSL certificates for the server side, use Dockerfile.AutoSSL instead.
-
-```
-docker build - -t rabbitmq-with-ssl:latest < Docker.AutoSSL
+docker build -t rabbitmq-with-ssl .
 ```
 
 ## To run this image
@@ -49,3 +43,5 @@ If you kept the `--rm` option, it will be deleted directly.
 ```
 cd tests && ./test.sh
 ```
+
+Credits to [daniftodi](https://github.com/daniftodi/rabbitmq-ssl-mng-docker)
