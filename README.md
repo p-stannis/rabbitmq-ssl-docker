@@ -31,7 +31,8 @@ You can verify client certificates were generated with `ls /tmp/docker-test`. Th
 a key store and a trust store, both in the PKCS12 format.
 Management interface is available at https://localhost:8080
 
-
+## Client certificates
+If you choose not to use client certificates, make sure in the rabbitmq.config file `fail_if_no_peer_cert` is set to false.
 ## To stop the container
 
 `docker stop <container-id>` will stop the container.  
